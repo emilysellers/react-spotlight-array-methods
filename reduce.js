@@ -29,6 +29,4 @@ export const getSneaks = (brands) => {
 //   const totalYears = dogs.reduce((acc, dog) => (acc += dog.age), 0);
 //   return totalYears / totalDogs;
 // };
-export const getAverageAge = (dogs) => {
-  return dogs.reduce((acc, dog) => (acc += dog.age), 0) / dogs.length;
-};
+export const getAverageAge = (dogs) => dogs.reduce((acc, dog) => (acc += dog.age), 0) / dogs.length;
