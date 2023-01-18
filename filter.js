@@ -1,16 +1,21 @@
 // INPUT: the array of countries from data.js
-// OUTPUT: only countries in Oceana
+// OUTPUT: only countries in Oceania
 // REQS: use .filter
 
-export const filterOceania = (countries) => {};
+// export const filterOceania = (countries) => {
+//   return countries.filter((continent) => country.continent === 'Oceania');
+// };
+export const filterOceania = (countries) =>
+  countries.filter(({ continent }) => continent === 'Oceania');
 
 // INPUT: the array of countries from data.js
 // OUTPUT: only countries whose name that include the letters 'au'
 // REQS: use .filter
 
-export const filterAu = (countries) => {
-  return countries.filter((country) => country.name.includes('au'));
-};
+// export const filterAu = (countries) => {
+//   return countries.filter((country) => country.name.includes('au'));
+// };
+export const filterAu = (countries) => countries.filter(({ name }) => name.includes('au'));
 
 // INPUT: the array of dogs from data.js
 // OUTPUT: only dogs that are 2 years old or younger
