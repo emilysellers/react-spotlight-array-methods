@@ -28,4 +28,7 @@ export const filterYoungDogs = (dogs) => {
 // INPUT: the array of dogs from data.js
 // OUTPUT: a list of names of dogs that are 2 years old or younger
 // REQS: use .filter AND .map OR use your filterYoungDogs function and a map
-export const getYoungDogNames = (dogs) => {};
+
+export const getYoungDogNames = (dogs) => {
+  return dogs.filter(({ age }) => age <= 2).map(({ name }) => name);
+};
